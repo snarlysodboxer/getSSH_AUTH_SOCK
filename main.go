@@ -102,7 +102,7 @@ func main() {
 
 	switch length := len(socketFiles); {
 	case length < 1:
-		fmt.Fprintln(os.Stderr, "No sockets found")
+		// fmt.Fprintln(os.Stderr, "No sockets found")
 		os.Exit(1)
 	case length == 1:
 		fmt.Printf("%s", socketFiles[0])
